@@ -1,0 +1,23 @@
+1.远程创建仓库
+
+2.复制仓库链接
+
+3.本地右键打开git-bash
+
+4.$ git clone 链接地址（ https://github.com/NSJack/XiaChuFang-Simple.git）
+
+5.$ cd 【刚刚clone下来的文件夹名称】
+
+6.将需要上传的资源复制到刚刚clone下来的文件夹内
+
+7.$ ls查看
+
+8.$ git status查看状态
+
+9.$ git add 【需要上传的资源名称】
+	
+	例：git add * （上传文件夹内所有资源）
+
+10.$ git commit -m "此次上传的描述"
+
+11.$ git push 确认上传

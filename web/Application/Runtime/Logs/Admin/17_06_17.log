@@ -1,0 +1,147 @@
+[ 2017-06-17T00:43:06+08:00 ] 127.0.0.1 /Admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+ERR: 非法操作:login
+
+[ 2017-06-17T00:43:15+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-06-17T00:43:17+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` ORDER BY bid desc LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-06-17T00:43:20+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add.html?bid=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `blog` WHERE `bid` = 17 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-06-17T00:43:35+08:00 ] 127.0.0.1 /index.php/Admin/Blog/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0992s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\xampp\htdocs\www\tpblog\web\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-17T00:43:43+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save.html?bid=17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002969s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: auto D:\xampp\htdocs\www\tpblog\web\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `blog` SET `title`='上传图片',`author`='a',`content`='&lt;p&gt;asdasdsdadsasdsfsdfsdfsfdsfd&lt;/p&gt;&lt;p&gt;sdadasd&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;daa&lt;/p&gt;&lt;p&gt;da&lt;/p&gt;&lt;p&gt;da&lt;/p&gt;&lt;p&gt;d&lt;img alt=&quot;2017-05-02.png&quot; src=&quot;/Uploads/2017-06-17/59440ab7b7224.png&quot; width=&quot;797&quot; height=&quot;214&quot;&gt;&lt;/p&gt;',`uptime`='1497631423' WHERE `bid` = 17 [ RunTime:0.1414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2017-06-17T00:43:44+08:00 ] 127.0.0.1 /Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `adminuser` WHERE `auid` = 8 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog` ORDER BY bid desc LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
